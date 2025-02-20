@@ -1,0 +1,31 @@
+services:
+  api:
+    image: phpbot_api
+    build:
+      context: .
+      dockerfile: Api.Dockerfile
+    ports:
+      - "8001:5000"
+    environment:
+      ConnectionStrings__DefaultConnection: Server=host.docker.internal;Database=phpbot;Username=postgres
+      ASPNETCORE_URLS: http://0.0.0.0:5000
+
+  bot:
+    image: phpbot_bot
+    build:
+      context: .
+      dockerfile: Bot.Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      TelegramApiToken: 7933280680:AAEPcByvrjUZITIvPKSYbdTb_5_J81J02vM
+      ApiHost: http://api:5000
+
+  sftp:
+    image: atmoz/sftp
+    ports:
+      - "22:22"
+    volumes:
+      - ./tmp_sftp/users.conf:/etc/sftp/users.conf:ro
+      - ./tmp_sftp/data:/home
+    hostname: sftp.local

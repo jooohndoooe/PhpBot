@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhpBot", "PhpBot\PhpBot.csproj", "{82FD89F4-9D2E-4AC9-9724-820C6F98C54A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhpBot.Api.Core", "PhpBot.Api.Core\PhpBot.Api.Core.csproj", "{18AD6E79-D4F2-40BB-9D2D-8130F8C5702F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhpBot.Api.Core.Test", "PhpBot.Api.Core.Test\PhpBot.Api.Core.Test.csproj", "{CF94E59B-CF54-439E-B261-D42E89DB97F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhpBot.Api.Data", "PhpBot.Api.Data\PhpBot.Api.Data.csproj", "{BE5F435F-F608-4BD6-86AD-79B669B6ED06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhpBot.Api.Web", "PhpBot.Api.Web\PhpBot.Api.Web.csproj", "{C433BA4E-C0FB-4DEB-AD31-A64C80E96D7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhpBot.Bot", "PhpBot.Bot\PhpBot.Bot.csproj", "{63347726-1CEB-4DA4-9609-3B78EDED1084}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +19,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{82FD89F4-9D2E-4AC9-9724-820C6F98C54A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{82FD89F4-9D2E-4AC9-9724-820C6F98C54A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{82FD89F4-9D2E-4AC9-9724-820C6F98C54A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{82FD89F4-9D2E-4AC9-9724-820C6F98C54A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18AD6E79-D4F2-40BB-9D2D-8130F8C5702F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AD6E79-D4F2-40BB-9D2D-8130F8C5702F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18AD6E79-D4F2-40BB-9D2D-8130F8C5702F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18AD6E79-D4F2-40BB-9D2D-8130F8C5702F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF94E59B-CF54-439E-B261-D42E89DB97F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF94E59B-CF54-439E-B261-D42E89DB97F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF94E59B-CF54-439E-B261-D42E89DB97F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF94E59B-CF54-439E-B261-D42E89DB97F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE5F435F-F608-4BD6-86AD-79B669B6ED06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE5F435F-F608-4BD6-86AD-79B669B6ED06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE5F435F-F608-4BD6-86AD-79B669B6ED06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE5F435F-F608-4BD6-86AD-79B669B6ED06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C433BA4E-C0FB-4DEB-AD31-A64C80E96D7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C433BA4E-C0FB-4DEB-AD31-A64C80E96D7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C433BA4E-C0FB-4DEB-AD31-A64C80E96D7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C433BA4E-C0FB-4DEB-AD31-A64C80E96D7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63347726-1CEB-4DA4-9609-3B78EDED1084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63347726-1CEB-4DA4-9609-3B78EDED1084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63347726-1CEB-4DA4-9609-3B78EDED1084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63347726-1CEB-4DA4-9609-3B78EDED1084}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4494C4F2-011B-4699-8B31-5A60550A633D}
+		SolutionGuid = {2A2E3752-E47C-43C3-9A39-4679315C7CB4}
 	EndGlobalSection
 EndGlobal
