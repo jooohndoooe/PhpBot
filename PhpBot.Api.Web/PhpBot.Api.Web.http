@@ -1,0 +1,35 @@
+@host = http://127.0.0.1:5103
+# Docker
+@host = http://127.0.0.1:8001
+
+###
+GET {{host}}/health
+
+###
+POST {{host}}/api/auth/login
+Content-Type: application/json
+
+{
+    "login":"admin",
+    "password":"admin",
+    "telegramUsername":"admin"
+}
+
+###
+GET {{host}}/api/upload/lastUploads
+X-TelegramUsername: admin
+
+###
+POST {{host}}/api/upload/upload
+X-TelegramUsername: admin
+Content-Type: application/json
+
+{
+    "appName":"appName",
+    "appBundle":"appBundle",
+    "sftpHost":"sftp.local",
+    "sftpLogin":"user1",
+    "sftpPassword":"123",
+    "sftpFilePath":"index.php"
+}
+
